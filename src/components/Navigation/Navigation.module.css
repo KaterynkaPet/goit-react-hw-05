@@ -1,0 +1,19 @@
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 14px;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.active {
+    color: orange;
+}
