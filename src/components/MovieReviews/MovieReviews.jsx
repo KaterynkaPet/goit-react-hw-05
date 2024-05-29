@@ -5,6 +5,7 @@ import css from './MovieReviews.module.css';
 
 function MovieReviews() {
     const [MovieReviews, setMovieReviews] = useState([]);
+    const { movieId } = useParams();
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const LazyMovieReviews = lazy(() => import('./MovieReviews'));
@@ -21,7 +22,7 @@ function MovieReviews() {
                 setLoading(false);
             }
         }
-        getMovieReviews(movieId);
+        getMovieReviews();
     }, [movieId]);
      
      return (
@@ -31,7 +32,7 @@ function MovieReviews() {
                  {error && <div>Something went wrong! Please, try reloading this page!</div>}
                  {MovieReviews.length > 0 ? (
                      <ul>
-                         {MovieReviews.map(({ id, autor, content }) => (
+                         {MovieReviews.map(({ id, author, content }) => (
                              <li key={id}>
                                  <p>{author}</p>
                                  <p>{content}</p>
