@@ -7,7 +7,8 @@ import css from './HomePage.module.css';
 
 const HomePage = () => {
     const [trendMovies, setTrendMovies] = useState([]);
-    const [loading, setLoading] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
 
     useEffect(() => {
         async function getTrendMovies() {

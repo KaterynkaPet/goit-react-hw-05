@@ -3,6 +3,7 @@ import { useState, useEffect, Suspense, useRef } from 'react';
 import { useParams, Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import css from './MovieDetailsPage.module.css';
 import toast from 'react-hot-toast';
+
 //import clsx from 'clsx';
 
 function MovieDetailsPage () {
@@ -12,7 +13,7 @@ function MovieDetailsPage () {
     const location = useLocation();
     const goBackLink = useRef(location.state ?? '/movies');
     const defaultImg = 'https://dl-media.viber.com/10/share/2/long/vibes/icon/image/0x0/95e0/5688fdffb84ff8bed4240bcf3ec5ac81ce591d9fa9558a3a968c630eaba195e0.jpg';
-     const { original_title, overview, genres, poster_path, vote_average } = movieDetailsPage;
+    const { original_title, overview, genres, poster_path, vote_average } = movieDetailsPage;
 
     //const buildLinkClass = ({ isActive }) => {
        // return clsx(css["info-link"], isActive && css.active);
@@ -38,7 +39,7 @@ function MovieDetailsPage () {
         return (
             <>
                 <div>
-                    <Link to={goBackLink}>Go back</Link>
+                    <Link to='/'>Go back</Link>
                 </div>
                 <div>
                 <img 
