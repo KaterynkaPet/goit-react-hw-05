@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    width: calc((100% / 6) - 100px);
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

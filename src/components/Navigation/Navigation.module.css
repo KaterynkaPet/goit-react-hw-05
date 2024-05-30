@@ -5,12 +5,6 @@
     font-size: 30px;
 }
 
-.link {
-    color: black;
-    text-decoration: none;
-    margin-right: 18px;
-}
-
 .link:hover {
     text-decoration: underline;
 }

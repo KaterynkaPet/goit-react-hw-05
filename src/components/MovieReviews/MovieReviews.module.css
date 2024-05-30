@@ -1,0 +1,29 @@
+.container {
+    margin-top: 20px;
+}
+
+.err {
+    color: red;
+    font-weight: bold;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 10px;
+}

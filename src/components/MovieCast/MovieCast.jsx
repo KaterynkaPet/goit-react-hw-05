@@ -31,12 +31,11 @@ function MovieCast ( ) {
     return (
         <div>
             <Suspense fallback={<div>Loading page...</div>}>
-                <LazyMovieReviews />
                 {error && <div>Something went wrong! Please, try reloading this page!</div>}
                 {movieCast.length > 0 && (
-                    <ul>
+                    <ul className={css.container}>
                         {movieCast.map(({ id, name, profile_path, character }) => (
-                            <li key={id}>
+                            <li key={id} className={css.item}>
                                 <img
                                     src={profile_path ? `https://image.tmdb.org/t/p/w200${profile_path}` : defaultImg}
                                     alt={name}
