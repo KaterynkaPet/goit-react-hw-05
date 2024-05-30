@@ -39,7 +39,7 @@ function MovieDetailsPage () {
         return (
             <>
                 <div>
-                    <Link to='/'>Go back</Link>
+                    <Link to={goBackLink.current}>Go back</Link>
                 </div>
                 <div>
                 <img 

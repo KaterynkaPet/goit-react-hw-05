@@ -8,8 +8,7 @@ function MovieReviews() {
     const { movieId } = useParams();
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
-    const LazyMovieReviews = lazy(() => import('./MovieReviews'));
-
+   
     useEffect(() => {
         const getMovieReviews = async () => {
             try {
